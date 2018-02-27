@@ -1,0 +1,36 @@
+\documentclass[russian,utf8,simple]{eskdtext}
+
+\input{src/packages.tex}
+
+% setup
+\newcommand{\FrontPageDepartment}{ИТ} %Факультет
+\newcommand{\FrontPageSubdepartment}{ИС} %Кафедра
+\newcommand{\WorkType}{Лабораторная работа №1} %Тип работы (заголовок)
+\newcommand{\Subject}{Инструментльные средства разработки программного обеспечения} %по ... родительный падеж
+\newcommand{\Topic}{Работа с системами контроля версий} %Тема
+\newcommand{\Professor}{Пугин~Е.~В.} %Руководитель
+\newcommand{\Student}{Буканин~А.~В.} %Студент
+\newcommand{\Group}{ПКС-216} %Группа
+\ESKDsignature{МИВУ 09.02.03} % Код специальности и тип работы
+\newcommand{\FrontPageDate}{\ddmmyyyydate\today} %Дата
+
+\input{src/setup.tex}
+
+% main document
+\begin{document}
+% Титул
+\ESKDthisStyle{title}
+\input{src/frontpage.tex}
+\newpage
+
+
+
+
+\ESKDthisStyle{formII}
+% Основной текст
+\input{src/text.tex}
+\newpage
+
+% Список литературы
+\input{src/bibliography.tex}
+\end{document}
