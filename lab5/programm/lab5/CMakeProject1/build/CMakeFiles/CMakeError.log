@@ -1,0 +1,270 @@
+Performing C SOURCE FILE Test HAVE_DECL_CLOCK_MONOTONIC failed with the following output:
+Change Dir: E:/student/lab5/CMakeProject1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_c55bf.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 15.6.82.30579 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 17.04.2018 9:36:26.
+Проект "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_c55bf.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_c55bf.dir\Debug\".
+  Создание каталога "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_c55bf.dir\Debug\cmTC_c55bf.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_c55bf.dir\Debug\cmTC_c55bf.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_DECL_CLOCK_MONOTONIC /D HAVE_SYS_TYPES_H=1 /D HAVE_SYS_STAT_H=1 /D STDC_HEADERS=1 /D HAVE_STDLIB_H=1 /D HAVE_STRING_H=1 /D HAVE_MEMORY_H=1 /D HAVE_INTTYPES_H=1 /D HAVE_STDINT_H=1 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c55bf.dir\Debug\\" /Fd"cmTC_c55bf.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.c
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.13.26129 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_DECL_CLOCK_MONOTONIC /D HAVE_SYS_TYPES_H=1 /D HAVE_SYS_STAT_H=1 /D STDC_HEADERS=1 /D HAVE_STDLIB_H=1 /D HAVE_STRING_H=1 /D HAVE_MEMORY_H=1 /D HAVE_INTTYPES_H=1 /D HAVE_STDINT_H=1 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c55bf.dir\Debug\\" /Fd"cmTC_c55bf.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.c
+  
+  src.c
+e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.c(43): error C2065: CLOCK_MONOTONIC: необъявленный идентификатор [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_c55bf.vcxproj]
+Сборка проекта "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_c55bf.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_c55bf.vcxproj" (целевой объект по умолчанию) (1) ->
+(ClCompile конечный объект) -> 
+  e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.c(43): error C2065: CLOCK_MONOTONIC: необъявленный идентификатор [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_c55bf.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:00.56
+
+Source file was:
+
+
+#include <stdio.h>
+#ifdef HAVE_SYS_TYPES_H
+# include <sys/types.h>
+#endif
+#ifdef HAVE_SYS_STAT_H
+# include <sys/stat.h>
+#endif
+#ifdef STDC_HEADERS
+# include <stdlib.h>
+# include <stddef.h>
+#else
+# ifdef HAVE_STDLIB_H
+#  include <stdlib.h>
+# endif
+#endif
+#ifdef HAVE_STRING_H
+# if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+#  include <memory.h>
+# endif
+# include <string.h>
+#endif
+#ifdef HAVE_STRINGS_H
+# include <strings.h>
+#endif
+#ifdef HAVE_INTTYPES_H
+# include <inttypes.h>
+#endif
+#ifdef HAVE_STDINT_H
+# include <stdint.h>
+#endif
+#ifdef HAVE_UNISTD_H
+# include <unistd.h>
+#endif
+
+
+
+int main()
+{
+    (void)
+CLOCK_MONOTONIC
+    ;
+    return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_DECL_DECL failed with the following output:
+Change Dir: E:/student/lab5/CMakeProject1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_0cefa.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 15.6.82.30579 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 17.04.2018 9:36:27.
+Проект "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0cefa.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_0cefa.dir\Debug\".
+  Создание каталога "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_0cefa.dir\Debug\cmTC_0cefa.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_0cefa.dir\Debug\cmTC_0cefa.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_DECL_DECL /D HAVE_SYS_TYPES_H=1 /D HAVE_SYS_STAT_H=1 /D STDC_HEADERS=1 /D HAVE_STDLIB_H=1 /D HAVE_STRING_H=1 /D HAVE_MEMORY_H=1 /D HAVE_INTTYPES_H=1 /D HAVE_STDINT_H=1 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0cefa.dir\Debug\\" /Fd"cmTC_0cefa.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.c
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.13.26129 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_DECL_DECL /D HAVE_SYS_TYPES_H=1 /D HAVE_SYS_STAT_H=1 /D STDC_HEADERS=1 /D HAVE_STDLIB_H=1 /D HAVE_STRING_H=1 /D HAVE_MEMORY_H=1 /D HAVE_INTTYPES_H=1 /D HAVE_STDINT_H=1 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0cefa.dir\Debug\\" /Fd"cmTC_0cefa.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.c
+  
+  src.c
+e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.c(46): error C2065: decl: необъявленный идентификатор [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0cefa.vcxproj]
+Сборка проекта "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0cefa.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0cefa.vcxproj" (целевой объект по умолчанию) (1) ->
+(ClCompile конечный объект) -> 
+  e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.c(46): error C2065: decl: необъявленный идентификатор [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0cefa.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:00.48
+
+Source file was:
+
+
+#include <stdio.h>
+#ifdef HAVE_SYS_TYPES_H
+# include <sys/types.h>
+#endif
+#ifdef HAVE_SYS_STAT_H
+# include <sys/stat.h>
+#endif
+#ifdef STDC_HEADERS
+# include <stdlib.h>
+# include <stddef.h>
+#else
+# ifdef HAVE_STDLIB_H
+#  include <stdlib.h>
+# endif
+#endif
+#ifdef HAVE_STRING_H
+# if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+#  include <memory.h>
+# endif
+# include <string.h>
+#endif
+#ifdef HAVE_STRINGS_H
+# include <strings.h>
+#endif
+#ifdef HAVE_INTTYPES_H
+# include <inttypes.h>
+#endif
+#ifdef HAVE_STDINT_H
+# include <stdint.h>
+#endif
+#ifdef HAVE_UNISTD_H
+# include <unistd.h>
+#endif
+
+#ifdef HAVE_INFINITY
+# include <INFINITY>
+#endif
+
+
+int main()
+{
+    (void)
+decl
+    ;
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_GCC_INLINE_ASM_AVX failed with the following output:
+Change Dir: E:/student/lab5/CMakeProject1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_5f8f2.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 15.6.82.30579 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 17.04.2018 9:38:30.
+Проект "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_5f8f2.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_5f8f2.dir\Debug\".
+  Создание каталога "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_5f8f2.dir\Debug\cmTC_5f8f2.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_5f8f2.dir\Debug\cmTC_5f8f2.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_GCC_INLINE_ASM_AVX /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5f8f2.dir\Debug\\" /Fd"cmTC_5f8f2.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.cxx
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.13.26129 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_GCC_INLINE_ASM_AVX /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5f8f2.dir\Debug\\" /Fd"cmTC_5f8f2.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.cxx
+  src.cxx
+  
+e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.cxx(13): fatal error C1189: #error:  No GCC style inline asm supported for AVX instructions [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_5f8f2.vcxproj]
+Сборка проекта "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_5f8f2.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_5f8f2.vcxproj" (целевой объект по умолчанию) (1) ->
+(ClCompile конечный объект) -> 
+  e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.cxx(13): fatal error C1189: #error:  No GCC style inline asm supported for AVX instructions [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_5f8f2.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:00.59
+
+Source file was:
+
+    int main()
+    {
+     #if defined(__GNUC__) && defined(__SSE2__)
+         int n   = 0;
+         int eax = 0;
+         int edx = 0;
+         __asm__(
+             "xgetbv     ;"
+             "vzeroupper  "
+             : "=a"(eax), "=d"(edx) : "c"(n) : );
+     #else
+         #error No GCC style inline asm supported for AVX instructions
+     #endif
+    }
+    
+Performing C++ SOURCE FILE Test HAVE_SYSCONF_NPROCESSORS_ONLN failed with the following output:
+Change Dir: E:/student/lab5/CMakeProject1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_0f6cf.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 15.6.82.30579 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 17.04.2018 9:38:30.
+Проект "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0f6cf.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_0f6cf.dir\Debug\".
+  Создание каталога "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_0f6cf.dir\Debug\cmTC_0f6cf.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_0f6cf.dir\Debug\cmTC_0f6cf.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_SYSCONF_NPROCESSORS_ONLN /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0f6cf.dir\Debug\\" /Fd"cmTC_0f6cf.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.cxx
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.13.26129 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D HAVE_SYSCONF_NPROCESSORS_ONLN /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0f6cf.dir\Debug\\" /Fd"cmTC_0f6cf.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\src.cxx
+  src.cxx
+  
+e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.cxx(2): fatal error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0f6cf.vcxproj]
+Сборка проекта "E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0f6cf.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0f6cf.vcxproj" (целевой объект по умолчанию) (1) ->
+(ClCompile конечный объект) -> 
+  e:\student\lab5\cmakeproject1\build\cmakefiles\cmaketmp\src.cxx(2): fatal error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [E:\student\lab5\CMakeProject1\build\CMakeFiles\CMakeTmp\cmTC_0f6cf.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:00.56
+
+Source file was:
+
+    #include <unistd.h>
+    int main()
+    {
+        sysconf(_SC_NPROCESSORS_ONLN);
+    }
+    
